@@ -1,0 +1,52 @@
+@import url(header.css);
+
+* {
+    font-family: Verdana;
+}
+
+body {
+    margin: 0;
+    background-color: cadetblue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+}
+
+.imgCables {
+    width: 25%;
+    height: 25%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.info {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.description {
+    margin-left: 3%;
+}
+
+.description ul {
+    margin-top: 4%;
+}
+
+.description li {
+    margin-top: 2%;
+}
+
+.description p {
+    width: 95%;
+}

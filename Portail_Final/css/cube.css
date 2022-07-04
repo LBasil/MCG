@@ -1,0 +1,131 @@
+/* Div principale du cube */
+.wrap {
+	margin-top: 7%;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+}
+
+/* Création du cube */
+.cube {
+	margin: auto;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	animation: rotate 20s infinite linear;
+}
+
+/* Gestion de toutes les div à l'intérieur du cube */
+.cube div {
+	position: absolute;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+	color: #ffffff;
+}
+
+/* Gestion des faces */
+.front {
+	transform: translateZ(100px);
+	-ms-transform: translateZ(100px);
+	-webkit-transform: translateZ(100px);
+	-moz-transform: translateZ(100px);
+	-o-transform: translateZ(100px);
+	background-color: transparent;
+	background-image: url("../images/logoID.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+	-webkit-transform: translateZ(-100px) rotateY(180deg);
+	-ms-transform: translateZ(-100px) rotateY(180deg);
+	-moz-transform: translateZ(-100px) rotateY(180deg);
+	-o-transform: translateZ(-100px) rotateY(180deg);
+	background-color: transparent;
+	background-image: url("../images/reverseID.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	-ms-transform: rotateY(-270deg) translateX(100px);
+	-webkit-transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+	-ms-transform-origin: top right;
+	-webkit-transform-origin: top right;
+	background-color: #e8483f;
+}
+
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	-webkit-transform: rotateY(270deg) translateX(-100px);
+	-ms-transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+	-ms-transform-origin: center left;
+	-webkit-transform-origin: center left;
+	background-color: #ffa6a6;
+}
+*/
+
+.top {
+	transform: rotateX(-270deg) translateY(-100px);
+	-webkit-transform: rotateX(-270deg) translateY(-100px);
+	-ms-transform: rotateX(-270deg) translateY(-100px);
+	-moz-transform: rotateX(-270deg) translateY(-100px);
+	-o-transform: rotateX(-270deg) translateY(-100px);
+	transform-origin: top center;
+	-ms-transform-origin: top center;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+	-o-transform-origin: top center;
+	background-color: transparent;
+	background-image: url("../images/logoID.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bottom {
+	transform: rotateX(270deg) translateY(100px);
+	-webkit-transform: rotateX(270deg) translateY(100px);
+	-ms-transform: rotateX(270deg) translateY(100px);
+	-moz-transform: rotateX(270deg) translateY(100px);
+	-o-transform: rotateX(270deg) translateY(100px);
+	transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
+	-moz-transform-origin: bottom center;
+	-o-transform-origin: bottom center;
+	background-color: transparent;
+	background-image: url("../images/logoID.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Gestion de la rotation */
+@keyframes rotate {
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+		-ms-transform: rotateX(0deg) rotateY(0deg);
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+		-o-transform: rotateX(0deg) rotateY(0deg);
+	}
+
+	to {
+		transform: rotateX(360deg);
+		-ms-transform: rotateX(360deg);
+		-webkit-transform: rotateX(360deg);
+		-moz-transform: rotateX(360deg);
+		-o-transform: rotateX(360deg);
+	}
+}

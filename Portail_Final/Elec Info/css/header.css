@@ -1,0 +1,80 @@
+/* Paramètres du header */
+header {
+    color: white;
+}
+
+/* Li premettant d'avoir les informations au dessus du logo */
+.breadcrumb {
+    margin-left: 12%;
+    font-size: 10px;
+}
+
+/* On change le display pour que ce soit à l'horizontal */
+.breadcrumb li {
+    display: inline-block;
+}
+
+/* Placement du numéro de téléphone à droite */
+.numTel {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 40%;
+}
+
+/* Couleur du numéro (à cause du :tel)*/
+.numTel a {
+    color: yellow;
+}
+
+/* Positionnement de la navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation img {
+    width: 18%;
+}
+
+/* Display changé pour être à l'horizontal */
+.navigation li {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Paramètres du bouton */
+.btnDevis {
+    background: rgb(218,25,88);
+    background: linear-gradient(90deg, rgba(218,25,88,1) 15%, rgba(171,14,65,1) 73%);
+    padding: 1% 1%;
+    height: 5%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+/* Gestion des menu déroulants */
+.dropDown1,
+.dropDown2 {
+    visibility: hidden;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.l1:hover .dropDown1 {
+    visibility: visible;
+}
+
+.l2:hover .dropDown2 {
+    visibility: visible;
+}
+
+/* Gestion du titre */
+.title {
+    text-align: center;
+    margin-top: 1.5%;
+    font-size: 25px;
+    color: white;
+}

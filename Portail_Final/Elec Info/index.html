@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/stylesIndex.css">
+        <link rel="shortcut icon" href="./images/elecinfo.png" type="image/x-icon">
+        <script language="JavaScript" type="text/javascript" src=" 
+        https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script language="JavaScript" type="text/javascript" src="./js/script.js"></script>
+        <title>Elec Info</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="breadcrumb">
+                <ul>
+                    <li>Réseau, fibre et télécom des PME</li>
+                    <li>Qui sommes nous ?</li>
+                    <li>Nous contacter</li>
+                    <li class="numTel"><a href="tel:+33324556750">03 24 55 67 50</a></li>
+                </ul>
+            </nav>  
+            <nav class="navigation">
+                <img src="./images/elecinfo.png" alt="">
+                <ul>
+                    <li class="l1">TELEPHONIE FIXE ▼
+                        <ul>
+                            <li class="dropDown1">Test</li>
+                        </ul>
+                    </li>
+                    <li class="l2">FIBRE & INTERNET ▼
+                        <ul>
+                            <li class="dropDown2">Test</li>
+                        </ul>
+                    </li>
+                    <li>CÂBLAGE RESEAU
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>VOS BESOINS
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="btnDevis">DEMANDER UN DEVIS</a>
+            </nav>
+        </header>
+        <main>
+            <h2 class="title">Câblage réseau informatique et télécom - Electricité courant faible & fort</h2>
+            <div class="container" id="container">
+                <nav class="carroussel">
+                    <ul>
+                        <li id="telephonie" onClick="handleclick(this.id)" class="active">[ TELEPHONIE FIXE ]</li>
+                        <li id="internet" onClick="handleclick(this.id)">[ ACCES INTERNET PRO ]</li>
+                        <li id="reseau" onClick="handleclick(this.id)">[ CÂBLAGE RESEAU ]</li>
+                        <li id="devis" onClick="handleclick(this.id)">[ DEMANDE DE DEVIS ]</li>
+                    </ul>
+                </nav>
+                <div class='informations' id='informations'>
+                    <div class='description' id='description'>
+                        <h1>Téléphonie pour votre entreprise</h1>
+                        <h2>Titre h2</h2>
+                        <p>Un paragraphe.</p>
+                        <ul id='ulDevis' class='ulDevis'></ul>
+                        <li id='li1' class='li1'>Une LI</li>
+                        <li id='li2' class='li2'>Une autre LI </li>
+                    </div>
+                    <img src='./images/cablesIndex.png' alt='' class='cablesIndex' id='cablesIndex'>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+@import url(header.css);
+
+* {
+    font-family: Verdana;
+}
+
+body {
+    margin: 0;
+    background-color: cadetblue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.titleInfo span {
+    display: block;
+}
+
+.informations p {
+    width: 62%;
+}
+
+.info {
+    margin-left: 13%;
+}
+
+.description {
+    display: flex;
+}
+
+.description li {
+    margin-bottom: 1%;
+}
+
+.leftDiv h4 {
+    text-align: center;
+    background-color: aqua;
+    width: 85%;
+    padding: 1% 1%;
+    font-size: 14px;
+}
+
+.leftDiv li {
+    width: 85%;
+    font-size: 14px;
+}
+
+.rightDiv h4 {
+    text-align: center;
+    background-color: gray;
+    width: 85%;
+    padding: 1% 1%;
+    font-size: 14px;
+}
+
+.rightDiv li {
+    font-size: 14px;
+}
+
+.imgCables {
+    width: 20%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 18px;
+}
+
+.footerContact {
+    background-color: black;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5% 0.5%;
+}
+

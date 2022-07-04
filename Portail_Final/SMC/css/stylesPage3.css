@@ -1,0 +1,149 @@
+/* Police de base pour tout le site */
+* {
+    font-family: Verdana;
+}
+
+/* Paramètre classique du body */
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+/* On enlève le fait que les "a" soient soulignés */
+a:link {
+    text-decoration: none;
+}
+
+/* On donna la couleur blanche aux "a" */
+a{
+    color: white;
+}
+
+/* On change le display des span pour simuler des passsages à la ligne */
+span {
+    display: block;
+}
+
+/* Permet de mettre en gras sans utiliser la balise <b> */
+.bold {
+    font-weight: bold;
+}
+
+/*On place les deux images en haut et en absolute */
+.smc,
+.mcg {
+    position: absolute;
+    top: 0;
+}
+
+/* On place les deux images au bon endroit */
+.smc {
+    width: 20%;
+    margin-left: 1%;
+}
+
+.mcg {
+    margin-left: 75%;
+    width: 23%;
+}
+
+/* On définit le margin de l'ul présente dans le header */
+header ul {
+    margin-left: 18%;
+}
+
+/* On définit le display en "inline-block" pour la liste soit à l'horizontale */
+header li {
+    display: inline-block;
+    margin-left: 1%;
+    color: white;
+}
+
+/* On éloigne simplement le contact et on le place près de l'image MCG */
+.contact {
+    margin-left: 35%;
+    color: white;
+}
+
+/* Container classique */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Paramètre de la div de gauche */
+.leftDiv {
+    background-color: pink;
+    color: white;
+    text-align: left;
+    width: 50%;
+    height: 430px;
+}
+
+.leftDiv h1,
+.leftDiv p,
+.leftDiv a {
+    margin-left: 25%;
+}
+
+.leftDiv span {
+    display: block;
+}
+
+.leftDiv h1 {
+    font-size: 18px;
+    margin-top: 25%;
+}
+
+.leftDiv p {
+    font-size: 12px;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+/* Paramètres du bouton */
+.vision {
+    border-radius: 30px;
+    color: white;
+    border: 3px solid white;
+    padding: 1% 1%;
+}
+
+/* Paramètre de la div de droite */
+.rightDiv {
+    width: 50%;
+    height: 430px;
+}
+
+/* Paramètre de la vidéo */
+video {
+    margin-top: 18%;
+    width: 96%;
+    height: 68.5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Contaienr des partenaires */
+.partenaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Paramètres du footer */
+footer {
+    background-color: white;
+}
+
+.partenaires img {
+    width: 15%;
+}
+
+.pFooter {
+    text-align: center;
+    font-size: 10px;
+}

@@ -1,0 +1,80 @@
+@import url(header.css);
+
+/* Même police partout */
+* {
+    font-family: Verdana;
+}
+
+/* Body classique */
+body {
+    margin: 0;
+    background-color: cadetblue;
+}
+
+/* On enlève le fait que les "a" soient soulignés */
+a:link {
+    text-decoration: none;
+}
+
+/* Container classique */
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px black solid;
+}
+
+/* Mettre en gras sans utilisé <b> */
+.bold {
+    font-weight: bold;
+}
+
+/* Contenair carroussel */
+.carroussel {
+    margin: auto;
+}
+
+/* Display pour que ce soit à l'horizontal */
+.carroussel li {
+    display: inline-block;
+}
+
+/* Permet de définir sur quel onglet l'utilisateur est */
+.active{
+    color: red;
+}
+
+/* Container classique */
+.informations {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px black solid;
+    width: 80%;
+}
+
+/* Container classique */
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.description h1 {
+    font-size: 18px;
+}
+
+.description h2 {
+    font-size: 16px;
+}
+
+
+.description p {
+    width: 55%;
+}
+
+.li1,
+.li2 {
+    width: 70%;
+    font-size: 14px;
+    margin-bottom: 1%;
+}

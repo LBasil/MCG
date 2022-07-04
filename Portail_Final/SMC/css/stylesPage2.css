@@ -1,0 +1,166 @@
+/* Police de base pour tout le site */
+* {
+    font-family: Verdana;
+}
+
+/* Paramètre classique du body */
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+/* On enlève le fait que les "a" soient soulignés */
+a:link {
+    text-decoration: none;
+}
+
+/* On donna la couleur blanche aux "a" */
+a{
+    color: white;
+}
+
+/* On change le display des span pour simuler des passsages à la ligne */
+span {
+    display: block;
+}
+
+/* Permet de mettre en gras sans utiliser la balise <b> */
+.bold {
+    font-weight: bold;
+}
+
+/*On place les deux images en haut et en absolute */
+.smc,
+.mcg {
+    position: absolute;
+    top: 0;
+}
+
+/* On place les deux images au bon endroit */
+.smc {
+    width: 20%;
+    margin-left: 1%;
+}
+
+.mcg {
+    margin-left: 75%;
+    width: 23%;
+}
+
+/* On définit le margin de l'ul présente dans le header */
+header ul {
+    margin-left: 18%;
+}
+
+/* On définit le display en "inline-block" pour la liste soit à l'horizontale */
+header li {
+    display: inline-block;
+    margin-left: 1%;
+    color: white;
+}
+
+/* On éloigne simplement le contact et on le place près de l'image MCG */
+.contact {
+    margin-left: 35%;
+    color: white;
+}
+
+/* Container classique */
+.container {
+    background-color: white;
+}
+
+/* Paramètre du titre */
+.title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Container de cartes */
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Paramètre des cartes */
+.medical,
+.industriel,
+.manutention {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+/* Paramètre bouton */
+.btn {
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    padding: 1% 1%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+/* Paramètre des boutons */
+.medical img,
+.industriel img,
+.manutention img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Paramètre des a et p */
+.medical p {
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.medical a {
+    background-color: cyan;
+    margin-top: 2%;
+}
+
+.industriel a {
+    background-color: rgb(224, 41, 57);
+    margin-top: 2%;
+}
+
+.manutention a {
+    background-color: cyan;
+    margin-top: 2%;
+}
+
+/* Paramètre du footer */
+footer {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+}
+
+footer p {
+    text-align: center;
+}
+
+.more {
+    border-radius: 30px;
+    padding: 1% 1%;
+    border: 3px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
