@@ -10,11 +10,13 @@ Il est majoritairement commenté et rangé.
 
 La partie PHP est incomplète et n'était qu'a l'étape de prototype afin de satisfaire une demande de mes enseignants, c'est pour cela qu'il n'y a pas de fichiers sql.
 Le code est effectué entièrement en local, cependant, une transition Wordpress est envisagé et potentiellement en cours. Si aucun fichier wordpress n'est présent dans le git, c'est qu'elle n'a pas eu lieu.
+-> Au vu des demandes très spécifique, je me suis d'abord orienté vers du fait main (uniquement la page portail), lorsque les deux sites m'ont été présenté, je l'ai ai réalisé à la main aussi car ils ne représentaient pas une difficulté importante. N'ayant jamais utilisé wordpress avant, j'ai donc terminé ce que je devais faire à la main, laissant donc maquettes et code afin de reproduire l'idée de la page sous WP pour le côté responsive.
 
 Les différentes pages et fonctionalités de ces dernières sont des retranscriptions des demandes de M. CORBARA.
 -> Pour plus détails ou si il y a des incompréhensions, veuillez donc vous référer à lui s'il est toujours en charge de ce projet et que les directives n'ont pas changées.
 
 La page d'index est une page dite portail et dynamique, c'est pour cela qu'elle possède de nombreuses animations.
+-> L'animation "matrix" correspond à celle du mot se baladant en arrière plan.
 Lors d'un passage sur un icône, cela stop toute la rotation, affiche les informations du site et affiche une preview du site en background.
 L'accès au site se fait par le bouton dédié, de même pour la page contact qui est universelle.
 -> Elle est géreé par des querries afin de savoir quelle entreprise le client souhaite contacter.
