@@ -1,0 +1,146 @@
+/* Temporaire
+main,
+header,
+footer {
+    animation: hideMain 3.5s;
+  }
+  
+.cardMCG {
+    animation: showMCG 5s;
+    -webkit-transition:all 1s ease-in;
+    -moz-transition:all 1s ease-in;
+    -o-transition:all 1s ease-in;
+    -ms-transition:all 1s ease-in;
+    transition:all 1s ease-in;
+}
+
+.cardID {
+    animation: showID 5s;
+}
+
+.cardSMC {
+    animation: showSMC 5s;
+}
+
+.cardEI{
+    animation: showEI 5s;
+}
+  
+  @keyframes hideMain {
+    0% {
+      visibility: hidden;
+    }
+   
+    99% {
+      visibility: hidden;
+    }
+   
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes showMCG {
+    0% {
+      visibility: visible;
+    }
+  }
+
+  @keyframes showID {
+    0% {
+      visibility: hidden;
+    }
+
+    20% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: visible;
+    }
+  }
+
+  @keyframes showSMC {
+    0% {
+      visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    35% {
+        visibility: hidden;
+    }
+
+    50% {
+      visibility: visible;
+    }
+  }
+
+  @keyframes showEI {
+    0% {
+      visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+  }
+*/
+
+/* */
+main,
+header,
+footer {
+    animation: hideMain 3.5s;
+  }
+
+@keyframes hideMain {
+    0% {
+      visibility: hidden;
+    }
+   
+    99% {
+      visibility: hidden;
+    }
+   
+    100% {
+      visibility: visible;
+    }
+  }
+
+.animation{
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: pulse 3.5s;
+}
+
+@keyframes pulse {
+    0% {
+        visibility: visible;
+      transform: scale(1, 1) translate(-50%,-50%);
+    }
+   
+    50% {
+      transform: scale(1.2, 1.2) translate(-50%,-50%);
+    }
+   
+    99% {
+      transform: scale(1, 1) translate(-50%,-50%);
+    }
+   
+    100% {
+      visibility: hidden;
+    }
+  }

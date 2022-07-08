@@ -1,0 +1,162 @@
+@import url(../css/_vars.css);
+
+* {
+    font-family: Verdana;
+}
+
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+}
+
+/* Header qui contient le texte */
+.firstHeader {
+    background: linear-gradient(#478ac9, #304AB6);
+    color: white;
+    padding: 0.5% 0 0.5% 0;
+}
+
+/* Span utilisés dans le header */
+span {
+    margin-left: 1%;
+}
+
+/* Classe utilisé pour le logo Eurabis */
+.logo {
+    width: 10%;
+    height: 10%;
+    float: right;
+    margin-bottom: 1%;
+}
+
+/* Utilisé pour la mention "Numéro 1 dans les Ardennes" */
+.spanTitre{
+    float: right;
+    margin-right: 1%;
+}
+
+/* Utilisé pour les lien <a> dans le header */
+.aHeader {
+    color: white;
+}
+
+/* Bloc principal de ma page */
+.firstSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/* Utilisé pour les logos des portails */
+.icone {
+    height: 35%;
+    width: 40%;
+    margin-top: 10%;
+}
+
+/* Bloc principaux des portails */
+.blocItem {
+    margin-right: 1% ;
+    background-color: white;
+    width: 20%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Permet d'éviter que les mots prennent toute la place dans la div portail */
+.pPortail {
+    word-wrap: break-word;
+    margin-top: 18%;
+}
+
+/* Style des boutons */
+.btn {
+    border-radius: 15px;
+    font-size: 15px;
+    /* T - R - B - L */
+    padding: 10px 30px;
+    background-color: var(--bleu);
+    color:white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn2 {
+    float:right;
+}
+
+.button {
+    display: flex;
+  }
+
+/* Rouge quand on passe sur le bouton */
+.btn:hover{
+    background-color: var(--rouge);
+}
+
+/* Placement du h2 dans le portail */
+h2 {
+    margin-top: 17%;
+}
+
+/* Alignement des infos du portail */
+.informations {
+    text-align: center;
+}
+
+/* Gestion du footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Enlever le côté souligné des liens */
+a:link {
+    text-decoration: none;
+}
+
+/* Rendre le premier footer avec un fond blanc */
+.fWhite {
+    background-color: white;
+}
+
+/* Gestion des popups */
+
+.popupMCG,
+.popupID,
+.popupSMC,
+.popupEI {
+    position:absolute;
+    margin-top: 1%;
+    background-color: var(--rouge);
+    width: 20%;
+    border-radius: 3%;
+    visibility: hidden;
+}
+
+.informationsMCG:hover .popupMCG {
+    visibility: visible;
+}
+
+.informationsID:hover .popupID {
+    visibility: visible;
+}
+
+.informationsSMC:hover .popupSMC {
+    visibility: visible;
+}
+
+.informationsEI:hover .popupEI {
+    visibility: visible;
+}
+
+.pPopUp {
+    word-wrap: break-word;
+}
+

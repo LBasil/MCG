@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <script language="JavaScript" type="text/javascript" src=" 
+  https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script language="JavaScript" type="text/javascript" src="./js/form.js"></script>
+  <title>Formulaire de contrat de maintenance</title>
+</head>
+
+<body id="body">
+  <header class="firstHeader" id="header1"></header>
+  <main id="main">
+    <form action="" method="post">
+      <div class="fields" id="fields">
+        <a href="./index.html" class="btn">Accès Portail</a>
+        <a href="https://www.informatiqdiscount.com" class="btn btnRight">Accès Site</a>
+        <h2>Contact</h2>
+        <div class="field_deroulante">
+          <label for="field1">Motif de la demande</label>
+          <select name="select" id="select" onchange="formPart1(this.value)">
+            <option value=""></option>
+            <option name="contact" id="contact" value="contact">Contact</option>
+            <option name="stage" id="stage" value="stage">Stage</option>
+            <option name="emploi" id="emploi" value="emploi">Emploi</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+* {
+  font-family: Verdana;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+  width: 344px;
+  margin: 3% auto auto auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+img {
+  height: 38%;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5% 5%;
+  height: 62%;
+}
+
+h3 {
+  margin: 5% 0;
+}
+
+p {
+  margin: 0;
+  color: #878787;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.aSpecial {
+  min-width: 100px;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2F8CC8;
+  border-radius: 10px;
+  box-shadow: 0px 9px 5px -8px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+}
+
+.aSpecial:hover {
+  background-color: #499ACF;
+  box-shadow: 0px 9px 15px -8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header qui contient le texte */
+.firstHeader {
+  background: linear-gradient(#478ac9, #304AB6);
+  color: white;
+  padding: 0.5% 0 0.5% 0;
+}
+
+/* Span utilisés dans le header */
+span {
+  margin-left: 1%;
+}
+
+/* Classe utilisé pour le logo Eurabis */
+.logo {
+  width: 10%;
+  height: 10%;
+  float: right;
+  margin-bottom: 1%;
+}
+
+/* Utilisé pour la mention "Numéro 1 dans les Ardennes" */
+.spanTitre {
+  float: right;
+  margin-right: 1%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.fWhite {
+  background-color: transparent;
+}
+

@@ -1,0 +1,148 @@
+@import url(_vars.css);
+
+
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important
+}
+
+* {
+  font-family: Verdana;
+}
+
+body {
+  background-color: #E5E5E5;
+  margin: 0;
+}
+
+/* Div principale, centrée et les élements sont à la verticale */
+main {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 3%;
+}
+
+/* Balise qui contient tout*/
+form {
+  background-color: white;
+  /* margin: auto; */
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 35%;
+  /* T R B L  */
+  padding: 2% 1% 1% 1%;
+  border-radius: 15px;
+}
+
+/*Permet de séparer les div field_text, déroulante, text area, file, submit & checkbox entre elles */
+.field_text,
+.field_submit,
+.field_deroulante,
+.field_checkbox,
+.field_textArea,
+.field_file {
+  padding: 3% 0% 0% 0%;
+}
+
+/* Met uniquement le titre au centre */
+h2 {
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* Elements à la verticale */
+.field_text,
+.field_deroulante,
+.field_textArea,
+.field_file {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styliser les inputs de text */
+input[type="text"],
+input[type="email"] {
+  border: 1px solid blue;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 1% 1% 1% 1%;
+}
+
+input[type="submit"] {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.textarea {
+  overflow-y: scroll;
+}
+
+/* Div contenant la map */
+.map {
+  display: flex;
+  margin-left: 5%;
+}
+
+/* Style du bouton */
+.btn {
+  border-radius: 15px;
+  font-size: 13px;
+  /* T - R - B - L */
+  padding: 10px 30px;
+  background-color: var(--bleu);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+}
+
+/* Change le couleur quand on passe la souris dessus */
+.btn:hover {
+  background-color: var(--rouge);
+}
+
+/* Enlève le fait que ce soit souligné */
+a:link {
+  text-decoration: none;
+}
+
+/* Deuxième bouton */
+.btnRight {
+  float: right;
+}
+
+/* Style du header */
+.firstHeader {
+  background: linear-gradient(#478ac9, #304AB6);
+  color: white;
+  padding: 0.5% 0 0.5% 0;
+}
+
+/* Span utilisés dans le header */
+span {
+  margin-left: 1%;
+}
+
+/* Utilisé pour la mention "Numéro 1 dans les Ardennes" */
+.spanTitre {
+  float: right;
+  margin-right: 1%;
+}
+
+/* Utilisé pour les lien <a> dans le header */
+.aHeader {
+  color: white;
+}
+
+/* Style du footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}

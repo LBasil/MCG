@@ -1,0 +1,99 @@
+/* On enlève le margin du body */
+body {
+    margin: 0;
+}
+
+/* On fait en sorte que le main fasse 100% de la taille de l'écran */
+main {
+    height: 100vh;
+}
+
+/* Classe permetant de définir la taille, la position et la rotation des logos */
+.satellites {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: rotate 30s linear reverse infinite;
+}
+
+/* Classe de référence pour tous les satellites afin de définir leur rotation */
+.orbite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    animation: rotate 30s linear infinite;
+}
+
+/* Positionnement du logo central */
+.logo {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+/* Div permettant de placer les informations à côté des logos */
+.actions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translate(29%, 1%);
+    width: 350px;
+    border: 1px solid;
+    background-color: white;
+}
+
+/* Classes gérant les deux boutons */
+.web,
+.contact {
+    border: none;
+    width: 60px;
+    background-color: transparent;
+}
+
+/* Ensemble des paramètres des logos des sites */
+.site1 {
+    background-image: url("../images/logoRose.png");
+    background-size: cover;
+    top: -500%;
+    transform: translate(-50%, -50%);
+
+}
+
+.site2 {
+    background-image: url("../images/logoJaune.png");
+    background-size: cover;
+    top: 600%;
+    left: 50%;
+}
+
+.site3 {
+    background-image: url("../images/logoVert.png");
+    background-size: cover;
+    top: 50%;
+    left: -550%;
+    transform: translate(-50%, -50%);
+}
+
+.site4 {
+    background-image: url("../images/logoNoir.png");
+    background-size: cover;
+    top: 50%;
+    left: 600%;
+    transform: translate(-50%, -50%);
+}
+
+/* Gestion de la rotation */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

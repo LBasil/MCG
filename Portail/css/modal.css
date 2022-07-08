@@ -1,0 +1,513 @@
+/* Bouton global + Modal pour MCG */
+
+.btnModal {
+    border: 0;
+    background-color: transparent;
+    margin-top: 2%;
+    float: right;
+    color: blue;
+}
+
+body.modal-active {
+    overflow: hidden
+}
+
+[data-toggle=modal] {
+    cursor: pointer
+}
+
+.modal,
+.modal * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1000;
+    background-color: transparent;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.modal.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.55)
+}
+
+.modal.active .modal-dialog {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modal.active .modal-content {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    opacity: 1
+}
+
+.modal-close {
+    display: block;
+    text-align: right;
+    cursor: pointer
+}
+
+.modal-content,
+.modal-dialog {
+    position: relative;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.modal-dialog {
+    margin: 30px auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 600px;
+    max-width: 94%
+}
+
+.modal-content {
+    opacity: 0;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 3px
+}
+
+.modal-content:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.modal-lg .modal-dialog,
+.modal-md .modal-dialog,
+.modal-xl .modal-dialog {
+    width: 94%
+}
+
+.modal-sm .modal-dialog {
+    width: 450px
+}
+
+@media screen and (min-width:576px) {
+    .modal-xl .modal-dialog {
+        width: 94%
+    }
+
+    .modal-md .modal-dialog {
+        width: 600px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal-xl .modal-dialog {
+        width: 90%
+    }
+
+    .modal-lg .modal-dialog {
+        width: 750px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .modal-xl .modal-dialog {
+        width: 900px
+    }
+}
+
+/*                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   Modal pour IG
+*/
+
+body.modalIG-active {
+    overflow: hidden
+}
+
+[data-toggle=modalIG] {
+    cursor: pointer
+}
+
+.modalIG,
+.modalIG * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modalIG {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1000;
+    background-color: transparent;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.modalIG.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.55)
+}
+
+.modalIG.active .modalIG-dialog {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modalIG.active .modalIG-content {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    opacity: 1
+}
+
+.modalIG-close {
+    display: block;
+    text-align: right;
+    cursor: pointer
+}
+
+.modalIG-content,
+.modalIG-dialog {
+    position: relative;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.modalIG-dialog {
+    margin: 30px auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 600px;
+    max-width: 94%
+}
+
+.modalIG-content {
+    opacity: 0;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 3px
+}
+
+.modalIG-content:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.modalIG-lg .modalIG-dialog,
+.modalIG-md .modalIG-dialog,
+.modalIG-xl .modalIG-dialog {
+    width: 94%
+}
+
+.modalIG-sm .modalIG-dialog {
+    width: 450px
+}
+
+@media screen and (min-width:576px) {
+    .modalIG-xl .modalIG-dialog {
+        width: 94%
+    }
+
+    .modalIG-md .modalIG-dialog {
+        width: 600px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modalIG-xl .modalIG-dialog {
+        width: 90%
+    }
+
+    .modalIG-lg .modalIG-dialog {
+        width: 750px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .modalIG-xl .modalIG-dialog {
+        width: 900px
+    }
+}
+
+/*                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   Modal pour SMC
+*/
+
+body.modalSMC-active {
+    overflow: hidden
+}
+
+[data-toggle=modalSMC] {
+    cursor: pointer
+}
+
+.modalSMC,
+.modalSMC * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modalSMC {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1000;
+    background-color: transparent;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.modalSMC.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.55)
+}
+
+.modalSMC.active .modalSMC-dialog {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modalSMC.active .modalSMC-content {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    opacity: 1
+}
+
+.modalSMC-close {
+    display: block;
+    text-align: right;
+    cursor: pointer
+}
+
+.modalSMC-content,
+.modalSMC-dialog {
+    position: relative;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.modalSMC-dialog {
+    margin: 30px auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 600px;
+    max-width: 94%
+}
+
+.modalSMC-content {
+    opacity: 0;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 3px
+}
+
+.modalSMC-content:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.modalSMC-lg .modalSMC-dialog,
+.modalSMC-md .modalSMC-dialog,
+.modalSMC-xl .modalSMC-dialog {
+    width: 94%
+}
+
+.modalSMC-sm .modalSMC-dialog {
+    width: 450px
+}
+
+@media screen and (min-width:576px) {
+    .modalSMC-xl .modalSMC-dialog {
+        width: 94%
+    }
+
+    .modalSMC-md .modalSMC-dialog {
+        width: 600px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modalSMC-xl .modalSMC-dialog {
+        width: 90%
+    }
+
+    .modalSMC-lg .modalSMC-dialog {
+        width: 750px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .modalSMC-xl .modalSMC-dialog {
+        width: 900px
+    }
+}
+
+/*                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   Modal pour EI
+*/
+
+body.modalEI-active {
+    overflow: hidden
+}
+
+[data-toggle=modalEI] {
+    cursor: pointer
+}
+
+.modalEI,
+.modalEI * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modalEI {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1000;
+    background-color: transparent;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.modalEI.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.55)
+}
+
+.modalEI.active .modalEI-dialog {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modalEI.active .modalEI-content {
+    -webkit-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    opacity: 1
+}
+
+.modalEI-close {
+    display: block;
+    text-align: right;
+    cursor: pointer
+}
+
+.modalEI-content,
+.modalEI-dialog {
+    position: relative;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.modalEI-dialog {
+    margin: 30px auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 600px;
+    max-width: 94%
+}
+
+.modalEI-content {
+    opacity: 0;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 3px
+}
+
+.modalEI-content:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.modalEI-lg .modalEI-dialog,
+.modalEI-md .modalEI-dialog,
+.modalEI-xl .modalEI-dialog {
+    width: 94%
+}
+
+.modalEI-sm .modalEI-dialog {
+    width: 450px
+}
+
+@media screen and (min-width:576px) {
+    .modalEI-xl .modalEI-dialog {
+        width: 94%
+    }
+
+    .modalEI-md .modalEI-dialog {
+        width: 600px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modalEI-xl .modalEI-dialog {
+        width: 90%
+    }
+
+    .modalEI-lg .modalEI-dialog {
+        width: 750px
+    }
+}
+
+@media screen and (min-width:992px) {
+    .modalEI-xl .modalEI-dialog {
+        width: 900px
+    }
+}
