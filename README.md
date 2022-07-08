@@ -8,9 +8,9 @@ Vous êtes évidemment libre de modifier le code existant, ou de ne pas le réut
 La code est composé d'HTML / CSS / JS / JQUERY / PHP. 
 Il est majoritairement commenté et rangé.
 
-La partie PHP est incomplète et n'était qu'a l'étape de prototype afin de satisfaire une demande de mes enseignants, c'est pour cela qu'il n'y a pas de fichiers sql.
-Le code est effectué entièrement en local, cependant, une transition Wordpress est envisagé et potentiellement en cours. Si aucun fichier wordpress n'est présent dans le git, c'est qu'elle n'a pas eu lieu.
--> Au vu des demandes très spécifique, je me suis d'abord orienté vers du fait main (uniquement la page portail), lorsque les deux sites m'ont été présenté, je l'ai ai réalisé à la main aussi car ils ne représentaient pas une difficulté importante. N'ayant jamais utilisé wordpress avant, j'ai donc terminé ce que je devais faire à la main, laissant donc maquettes et code afin de reproduire l'idée de la page sous WP pour le côté responsive.
+La partie PHP est incomplète et n'était qu'a l'étape de prototype afin de satisfaire une demande de mes enseignants, c'est pour cela qu'il n'y a pas de fichiers sql (de plus ce n'était pas du tout une priorité).
+Le code est effectué entièrement en local (testé sous XAMPP), cependant, une transition Wordpress est envisagé et potentiellement en cours. Si aucun fichier wordpress n'est présent dans le git, c'est qu'elle n'a pas eu lieu. (NB : Il y a beaucoup trop de fichiers pour passer par GIT)
+-> Au vu des demandes très spécifique, je me suis d'abord orienté vers du fait main (uniquement la page portail), lorsque les deux sites m'ont été présenté, je l'ai ai réalisé à la main aussi car ils ne représentaient pas une difficulté importante. N'ayant jamais utilisé wordpress avant, j'ai donc terminé ce que je devais faire à la main, laissant donc maquettes et code afin de reproduire l'idée de la page sous WP pour le côté responsive (n'ayant jamais travailé avec ce CMS).
 
 Les différentes pages et fonctionalités de ces dernières sont des retranscriptions des demandes de M. CORBARA.
 -> Pour plus détails ou si il y a des incompréhensions, veuillez donc vous référer à lui s'il est toujours en charge de ce projet et que les directives n'ont pas changées.
