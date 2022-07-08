@@ -17,7 +17,7 @@ switch ($select) {
         break;      
     case "stage":
         //Préparation de la requête pour que ce soit sécurisé   
-        $insertDataStage = $db->prepare('INSERT INTO stage(mail, duree, societe) VALUES (:mail, :duree, :query_string)');
+        $insertDataStage = $db->prepare('INSERT INTO stage(mail, duree, societe) VALUES(:mail, :duree, :query_string)');
         /* $email = $_POST['field2'];
             $duree = $_POST['field5'];
             $url = $_SERVER["HTTP_REFERER"];

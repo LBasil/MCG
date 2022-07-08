@@ -35,42 +35,18 @@ function showLogoPreview(value) {
     const logoPreview = document.getElementById("logoPreview");
     switch (value) {
         case "site1":
-            /*
-            logoPreviewMCG.style.top = site.style.top;
-            logoPreviewMCG.style.bottom = site.style.bottom;
-            logoPreviewMCG.style.left = site.style.left;
-            logoPreviewMCG.style.right = site.style.right;
-            */
             logoPreview.style.backgroundImage = `url("./images/fondMCG.png")`
             logoPreview.style.visibility = "visible";
             break;
         case "site2":
-            /*
-            logoPreviewID.style.top = site.style.top;
-            logoPreviewID.style.bottom = site.style.bottom;
-            logoPreviewID.style.left = site.style.left;
-            logoPreviewID.style.right = site.style.right;
-            */
             logoPreview.style.backgroundImage = `url("./images/fondID.png")`
             logoPreview.style.visibility = "visible";
             break;
         case "site3":
-            /*
-            logoPreviewSMC.style.top = site.style.top;
-            logoPreviewSMC.style.bottom = site.style.bottom;
-            logoPreviewSMC.style.left = site.style.left;
-            logoPreviewSMC.style.right = site.style.right;
-            */
             logoPreview.style.backgroundImage = `url("./images/fondID.png")`
             logoPreview.style.visibility = "visible";
             break;
         case "site4":
-            /*
-            logoPreviewEI.style.top = site.style.top;
-            logoPreviewEI.style.bottom = site.style.bottom;
-            logoPreviewEI.style.left = site.style.left;
-            logoPreviewEI.style.right = site.style.right;
-            */
             logoPreview.style.backgroundImage = `url("./images/fondID.png")`
             logoPreview.style.visibility = "visible";
             break;

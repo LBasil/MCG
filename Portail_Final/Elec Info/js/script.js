@@ -3,10 +3,11 @@ const handleclick = (value) => {
 	carroussel(value);
 }
 
-/* On affiche suivant l'onglet sur lequel l'utilisateuer a cliqué */
+/* On affiche suivant l'onglet sur lequel l'utilisateur a cliqué */
 function carroussel (value) {
     clearAll();
     switch(value){
+        /* Téléphonie est un copié / collé de celle par "défaut", non pas du case, mais de ce qui est affiché lors du premier chargement de la page */
         case 'telephonie':
             $("#telephonie").addClass("active");
             $("<div class='informations' id='informations'></div>").appendTo("#container");
@@ -57,7 +58,6 @@ function carroussel (value) {
         break;
         default:
         break;
-
     }
 }
 
