@@ -23,6 +23,7 @@ switch ($select) {
             $url = $_SERVER["HTTP_REFERER"];
             $query = parse_url($url, PHP_URL_QUERY);
             $query_string = substr($query, 5); */
+            
         $mail = "a@a.fr";
         $duree = 10;
         $query_string = "ei";

@@ -74,3 +74,4 @@ function clearClass(){
     $("#reseau").removeClass("active");
     $("#devis").removeClass("active");
 }
+
