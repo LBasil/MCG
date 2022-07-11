@@ -21,6 +21,7 @@ La page d'index est une page dite portail et dynamique, c'est pour cela qu'elle 
 Lors d'un passage sur un icône, cela stop toute la rotation, affiche les informations du site et affiche une preview du site en background.
 L'accès au site se fait par le bouton dédié, de même pour la page contact qui est universelle.
 -> Elle est géreé par des querries afin de savoir quelle entreprise le client souhaite contacter.
+La page ne doit pas disposer de scroll et le surplus d'informations doit être affiché dans des modals.
 
 La page de contact permet d'envoyer différents formulaire sur une boîte mail, avec en objet le nom de la société contacté puis la raison. /!\ Work in progess /!\
 
