@@ -1,7 +1,7 @@
 # MCG
 Portail MCG + Elec Info + SMC
 
-Git reprenant le code réalisé entre le 09/05 et le 18/07 dans le cadre d'un stage de fin d'études de DUT Informatique effectué par Basil L'HÔTE pour Informatiq'Discoutn sous la tutelle de Stéphane CORBARA.
+Git reprenant le code réalisé entre le 09/05 et le 18/07 dans le cadre d'un stage de fin d'études de DUT Informatique effectué par Basil L'HÔTE pour Informatiq'Discount sous la tutelle de Stéphane CORBARA.
 
 Vous êtes évidemment libre de modifier le code existant, ou de ne pas le réutiliser, je ne toucherai plus au code en dehors de ma période de stage.
 
