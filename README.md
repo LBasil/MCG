@@ -25,5 +25,5 @@ La page ne doit pas disposer de scroll et le surplus d'informations doit être a
 
 La page de contact permet d'envoyer différents formulaire sur une boîte mail, avec en objet le nom de la société contacté puis la raison. /!\ Work in progess /!\
 
-Elec info et SMC ont un site en construction, veuillez-vous référer aux designs présent sur la clef USB de M. CORBARA s'ils n'ont pas changés et qu'il est toujours responsable de ce projet.
+Elec info et SMC ont un site en construction, veuillez-vous référer aux designs présent sur la clef USB de M. CORBARA s'ils n'ont pas changés et qu'il est toujours responsable de ce projet OU aux fichiers avec le commit "Maquettes".
 
