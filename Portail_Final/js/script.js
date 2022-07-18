@@ -31,7 +31,6 @@ function hideAll(value) {
 }
 
 function showLogoPreview(value) {
-    /* const site = document.getElementById(value); */
     const logoPreview = document.getElementById("logoPreview");
     switch (value) {
         case "site1":
@@ -51,7 +50,7 @@ function showLogoPreview(value) {
             logoPreview.style.visibility = "visible";
             break;
         default:
-            break;
+        break;
     }
 }
 
