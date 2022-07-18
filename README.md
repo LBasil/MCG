@@ -1,7 +1,7 @@
 # MCG
 Portail MCG + Elec Info + SMC
 
-![til](../PortailV2/Recording 2022-07-18 at 08.46.28.gif)
+![me](https://github.com/LBasil/MCG/blob/main/PortailV2/Recording%202022-07-18%20at%2008.46.28.gif)
 
 Git reprenant le code réalisé entre le 09/05 et le 18/07 dans le cadre d'un stage de fin d'études de DUT Informatique effectué par Basil L'HÔTE pour Informatiq'Discount sous la tutelle de Stéphane CORBARA.
 
